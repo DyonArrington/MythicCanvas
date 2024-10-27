@@ -1,0 +1,50 @@
+
+/* Enhanced Tailwind-like styling with animations, gradients, and vivid colors */
+body, html {
+    font-family: 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: all 0.2s ease-in-out;
+}
+.btn {
+    padding: 12px 24px;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+.btn-primary {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    color: white;
+}
+.btn-secondary {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+}
+.fade-in {
+    animation: fadeIn 1.5s ease-in-out;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.modal {
+    display: none;
+}
+.modal img {
+    max-width: 90%;
+    max-height: 90%;
+    transition: opacity 0.3s;
+}
+.modal .close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    font-size: 2em;
+    cursor: pointer;
+}
+.gallery-item:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+    

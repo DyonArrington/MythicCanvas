@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - MythicCanvas</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/app.js" defer></script>
+</head>
+<body class="bg-gray-900 text-gray-200 overflow-hidden">
+    <header class="p-8 text-center fade-in">
+        <h1 class="text-5xl font-bold text-teal-400 drop-shadow-md">Explore Fantasy Art</h1>
+    </header>
+    <main class="grid grid-cols-1 md:grid-cols-3 gap-6 p-10">
+        <section class="gallery-item rounded-lg bg-gray-800 shadow-lg p-4 transition transform hover:scale-105">
+            <img src="images/sample1.jpg" alt="Sample Art 1" class="w-full rounded-lg mb-3 shadow-lg" onclick="openModal('images/sample1.jpg')">
+            <h2 class="text-xl text-white">Mystic Forest</h2>
+            <p class="text-sm text-gray-300">A serene landscape of wonder...</p>
+        </section>
+    </main>
+
+    <!-- Modal for image preview -->
+    <div id="imageModal" class="modal hidden fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center">
+        <span class="close-modal" onclick="closeModal()">×</span>
+        <img id="modalImage" class="rounded-lg shadow-lg">
+    </div>
+</body>
+</html>
+    
